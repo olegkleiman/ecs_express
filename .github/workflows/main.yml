@@ -1,0 +1,17 @@
+name: Build & Push to ECR
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: okrepo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
