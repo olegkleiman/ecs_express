@@ -1,4 +1,4 @@
-name: Build & Push to ECR
+name: Just checkout code
 
 on:
   push:
