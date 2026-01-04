@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.status(200).send('Version 0.9.1 - Healthy');
+  res.status(200).send('Version 0.9.2 - Healthy');
 });
 
 app.listen(PORT, () => {
